@@ -8,8 +8,9 @@ const toggleMenu = () => {
   toggleBtn.classList.toggle('bx-x');
 };
 
-const activateLink = () => {
+const activateLink = function () {
   links.forEach((l) => l.classList.remove('active'));
+
   this.classList.add('active');
 };
 
