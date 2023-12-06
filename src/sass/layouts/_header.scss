@@ -1,0 +1,56 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--color-brand-light);
+  background-image: radial-gradient(
+    circle,
+    rgba(68, 87, 129, 1) 25%,
+    rgba(49, 159, 154, 1) 82%,
+    rgba(2, 149, 129, 1) 100%
+  );
+  padding: 0.5rem;
+
+  &__container {
+    gap: 2.5rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    &--logo {
+      width: 3rem;
+      border: 1px solid var(--color-highlight);
+      border-radius: 1rem;
+      background-color: white;
+      box-shadow: 0 0 1rem var(--color-highlight);
+    }
+
+    &--logo:hover {
+      background-color: var(--color-highlight);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    &--icon {
+      fill: white;
+    }
+
+    &--icon:hover {
+      fill: var(--color-highlight);
+    }
+  }
+}

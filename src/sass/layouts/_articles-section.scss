@@ -1,0 +1,13 @@
+.articles-section {
+  padding: 4.7rem 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 2rem) / 2);
+  }
+}
