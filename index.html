@@ -4,239 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SYZYY WEB</title>
+    <title>Syzyy</title>
     <!-- Styles -->
     <link rel="stylesheet" href="./src/css/main.min.css" />
-    <!-- BOX icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
-      <div class="header__container">
-        <img src="src/img/syzyy_logo.svg" alt="" class="header__img" />
-
-        <div class="header__search">
-          <input
-            id="search"
-            type="search"
-            placeholder="Search"
-            class="header__input"
-          />
-          <i class="bx bx-search header__icon"></i>
-        </div>
-
-        <div class="header__toggle">
-          <i class="bx bx-menu" id="header-toggle"></i>
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/">
+              <img
+                src="src/img/syzyy_logo.png"
+                alt=""
+                class="header__nav--logo"
+              />
+            </a>
+            <ul class="header__menu">
+              <li>Articles</li>
+            </ul>
+            <div class="header__socials">
+              <a href="https://github.com/PashokSy" target="_blank">
+                <svg class="header__socials--icon" width="32" height="32">
+                  <use href="./src/img/icons.svg#icon-iconmonstr-github"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pavlosyzonenko/"
+                target="_blank"
+              >
+                <svg class="header__socials--icon" width="32" height="32">
+                  <use
+                    href="./src/img/icons.svg#icon-iconmonstr-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
 
-    <!-- Nav -->
-    <div class="nav" id="navbar">
-      <nav class="nav__container">
-        <div>
-          <a href="#" class="nav__link nav__logo">
-            <i class="bx bxs-disc nav__icon"></i>
-            <span class="nav__logo--name">Syzyy</span>
-          </a>
-
-          <div class="nav__list">
-            <div class="nav__items">
-              <h3 class="nav__subtitle">User</h3>
-
-              <a href="#" class="nav__link">
-                <i class="bx bx-home nav__icon"></i>
-                <span class="nav__name">Home</span>
-              </a>
-
-              <div class="nav__dropdown">
-                <a href="#" class="nav__link">
-                  <i class="bx bx-user nav__icon"></i>
-                  <span class="nav__name">Profile</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="nav__items">
-              <h3 class="nav__subtitle">Menu</h3>
-
-              <a href="#" class="nav__link">
-                <i class="bx bx-book nav__icon"></i>
-                <span class="nav__name">Articles</span>
-              </a>
-
-              <a href="#" class="nav__link">
-                <i class="bx bx-compass nav__icon"></i>
-                <span class="nav__name">Explore</span>
-              </a>
-
-              <a href="#" class="nav__link">
-                <i class="bx bx-bookmarks nav__icon"></i>
-                <span class="nav__name">Saved</span>
-              </a>
-            </div>
-          </div>
+    <main>
+      <section class="articles-section">
+        <div class="container">
+          <ul class="articles-section__list">
+            <li class="articles-section__item">
+              <article class="article-card">
+                <h2 class="article-card__title">Lorem ipsum</h2>
+                <p class="article-card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  harum dicta magnam deserunt quo, consequatur illo enim quos
+                  nemo inventore saepe id maiores, sequi, porro facere vitae
+                  obcaecati eum assumenda?
+                </p>
+                <p class="article-card__author">Lorem</p>
+                <p class="article-card__date">12/22/2222</p>
+              </article>
+            </li>
+            <li class="articles-section__item">
+              <article class="article-card">
+                <h2 class="article-card__title">Lorem ipsum</h2>
+                <p class="article-card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  harum dicta magnam deserunt quo, consequatur illo enim quos
+                  nemo inventore saepe id maiores, sequi, porro facere vitae
+                  obcaecati eum assumenda?
+                </p>
+                <p class="article-card__author">Lorem</p>
+                <p class="article-card__date">12/22/2222</p>
+              </article>
+            </li>
+            <li class="articles-section__item">
+              <article class="article-card">
+                <h2 class="article-card__title">Lorem ipsum</h2>
+                <p class="article-card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  harum dicta magnam deserunt quo, consequatur illo enim quos
+                  nemo inventore saepe id maiores, sequi, porro facere vitae
+                  obcaecati eum assumenda?
+                </p>
+                <p class="article-card__author">Lorem</p>
+                <p class="article-card__date">12/22/2222</p>
+              </article>
+            </li>
+            <li class="articles-section__item">
+              <article class="article-card">
+                <h2 class="article-card__title">Lorem ipsum</h2>
+                <p class="article-card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  harum dicta magnam deserunt quo, consequatur illo enim quos
+                  nemo inventore saepe id maiores, sequi, porro facere vitae
+                  obcaecati eum assumenda?
+                </p>
+                <p class="article-card__author">Lorem</p>
+                <p class="article-card__date">12/22/2222</p>
+              </article>
+            </li>
+          </ul>
         </div>
-
-        <a href="#" class="nav__logout">
-          <i class="bx bx-log-out nav__icon"></i>
-          <span class="nav__name">Sign Out</span>
-        </a>
-      </nav>
-    </div>
-
-    <main class="main">
-      <div class="main__container">
-        <section>
-          <ul>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-            <li>
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Distinctio nostrum vel in deleniti rem nulla doloremque?
-                Assumenda, odio eligendi quaerat voluptas minus deserunt, soluta
-                doloribus vel optio sint cupiditate repellendus.
-              </p>
-            </li>
-          </ul>
-        </section>
-      </div>
+      </section>
     </main>
-
-    <script src="./src/js/menu.js"></script>
   </body>
 </html>
